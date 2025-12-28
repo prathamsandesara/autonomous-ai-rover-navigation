@@ -1,4 +1,61 @@
+# 🚀 Autonomous AI Planetary Rover Navigation Agent
 
+An **autonomous artificial intelligence rover** that navigates a hazardous planetary terrain using **A\*** search, **multiple heuristics**, and **reactive survival behaviors**.  
+The system combines **deliberative planning** with **real-time reflex actions** to safely reach goals under uncertainty.
+
+---
+
+## 📌 Project Overview
+
+This project simulates an intelligent planetary rover operating on a **20×20 grid-based environment** containing:
+
+- Multiple terrain types with different traversal costs  
+- Hazards, traps, cliffs, and impassable regions  
+- Limited battery capacity  
+- Recharge stations  
+
+The rover dynamically plans **optimal and safe paths** while reacting to hazards, low battery levels, and environmental changes.
+
+---
+
+## 🧠 AI Concepts Used
+
+- Artificial Intelligence (AI)
+- A* Search Algorithm
+- Heuristic Search
+- Autonomous Agents
+- Deliberative + Reactive Architecture
+- State Space Search
+- Constraint-Based Decision Making
+
+---
+
+## 🗺️ Terrain & Cost Modeling
+
+Each grid cell is modeled as a **state** with:
+- Position `(x, y)`
+- Terrain type
+- Movement cost
+- Hazard / trap status
+- Passability
+
+### Terrain Costs
+
+| Terrain Type | Cost |
+|-------------|------|
+| Flat | 5 |
+| Sandy | 10 |
+| Trap | 20 |
+| Hazardous | 25 |
+| Cliff / Rock | Impassable |
+
+---
+
+## 🔍 A* Search Algorithm
+
+The rover plans paths using the standard A* evaluation function:
+
+f(n) = g(n) + h(n) 
 Where:
 - `g(n)` is the cumulative terrain cost from the start
 - `h(n)` is the heuristic estimate to the goal
