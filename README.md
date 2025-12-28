@@ -135,7 +135,7 @@ The GUI provides:
 ### Run the Simulation
 ```bash
 python src/main.py
-
+```
 
 ## 👨‍💻 Contributors
 
@@ -148,3 +148,4 @@ python src/main.py
 
 - Russell & Norvig, *Artificial Intelligence: A Modern Approach*
 - AIMA-Python Repository: https://github.com/aimacode/aima-python
+
